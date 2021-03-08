@@ -16,8 +16,8 @@ if __name__ == "__main__":
 
     pcd = []
     for name in args.input:
-        tmp = PointCloud()
-        tmp = read_point_cloud( name ) 
+        tmp = geometry.PointCloud
+        tmp = io.read_point_cloud( name ) 
         pcd.append(tmp)
         print(tmp)
         #draw_geometries([tmp])
